@@ -128,4 +128,32 @@ var apis = [
             code: 'StorageManager.estimate() ...'
         }
     },
+    {
+        id: 'device_memory',
+        name: 'Device Memory API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The deviceMemory read-only property of the Navigator interface returns the approximate amount of device memory in gigabytes. This value is an approximation given by rounding down to the nearest power of 2 and dividing that number by 1024. Also, the lower and upper bounds are used to protect privacy of owners of very low- or high-end devices.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/Navigator/deviceMemory'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://www.w3.org/TR/device-memory/'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=mdn-api_navigator_devicememory'
+        },
+        content: {
+            content: [
+                'This feature is available only in secure contexts (HTTPS)',
+                'There are two ways to acces the approximate amount of RAM device has: via JavaScript API and via Client Hints HTTP header'
+            ],
+            code: 'navigator.deviceMemory || HTTP Client Hints Device-Memory'
+        }
+    }
 ];
