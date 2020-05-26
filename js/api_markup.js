@@ -9,8 +9,21 @@
     markup += '<br /><code>'+ content.code + '</code><br /><br />'
 
     if(content.vendor) {
-        markup += '<p>Check here for your api usage results: <a href="' + content.vendor.url + '" target="_blank">' + content.vendor.info + '</a></p>'
+        markup += '<p>' + content.vendor.url_message + ': <a href="' + content.vendor.url + '" target="_blank">' + content.vendor.info + '</a></p>'
     }
 
     app.innerHTML = markup + app.innerHTML
 })())
+
+
+function UIMessage(){
+    var message = document.createElement('div')
+    message.id = "ui_message"
+    message.innerHTML = "<p class='message'>Fetching...</p>"
+
+    document.body.appendChild(message)
+}
+function UIMessageRemove(){
+    var message = document.getElementById('ui_message')
+    message.parentElement.removeChild(message)
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+</head>
+<body>
+    <div id="app" data-api="cache">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Cache a response in browser and call it later from cache</h2>
+            <p>(click 'Get JSON Data' button) (I put some delay intentionally for fetch)</p>
+            <div class="buttons">
+                <button id="get">Get JSON Data</button>
+                <button id="clear">Clear Local Cache</button>
+            </div>
+            <br />
+            <br />
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/cache.js"></script>
+</body>
+</html>

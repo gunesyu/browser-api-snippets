@@ -10,3 +10,4 @@ Every api is in its own script inside `apis_js` directory for ease of use. To se
 #### Contents
 1. Beacon API
 2. IntersectionObserver API
+3. Cache API

@@ -52,6 +52,8 @@ code {
 .api-check h2 {
     font-size: 1.15rem;
     margin-top: 0;
+    background-color: #520000;
+    padding: 3px 6px;
     overflow: hidden;
 }
 .api-check h2 a {
@@ -93,4 +95,59 @@ code {
 }
 .api-example .buttons>* {
     font-size: 1.05rem;
+}
+
+
+#ui_message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    background-color: rgba(0,0,0,0.66);
+}
+#ui_message .message {
+    transform-origin: center;
+    animation-name: rubberBand;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rubberBand {
+    0% {
+        transform: scaleX(1);
+    }
+    10% {
+        transform: scaleX(1);
+    }
+    30% {
+        transform: scaleX(.5)
+    }
+    50% {
+        transform: scaleX(1.25);
+    }
+    60% {
+        transform: scaleX(.8);
+    }
+    68% {
+        transform: scaleX(1.16);
+    }
+    75% {
+        transform: scaleX(.9);
+    }
+    81% {
+        transform: scaleX(1.1);
+    }
+    86% {
+        transform: scaleX(.96);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

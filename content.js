@@ -23,6 +23,7 @@ var apis = [
             vendor: {
                 endpoint: 'https://putsreq.com/S0Y59TUEUvD089Rh0uXC',
                 url: 'https://putsreq.com/S0Y59TUEUvD089Rh0uXC/inspect',
+                url_message: 'Check here for your api usage results',
                 info: 'PutsReq (http mocker) Requests',
             },
             content: [
@@ -60,6 +61,43 @@ var apis = [
                 'Deciding whether or not to perform tasks or animation processes based on whether or not the user will see the result'
             ],
             code: 'new IntersectionObserver(callback, options)'
+        }
+    },
+    ,
+    {
+        id: 'cache',
+        name: 'Cache API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The Cache interface provides a storage mechanism for Request / Response object pairs that are cached, for example as part of the ServiceWorker life cycle. Note that the Cache interface is exposed to windowed scopes as well as workers. You don\'t have to use it in conjunction with service workers, even though it is defined in the service worker spec.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/Cache'
+            }
+        },
+        docs: {
+            display_name: 'Check MDN Docs',
+            url: 'https://developer.mozilla.org/tr/docs/Web/API/Cache'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=mdn-api_cache'
+        },
+        content: {
+            vendor: {
+                endpoint: 'https://httpbin.org/json',
+                url: 'https://httpbin.org/',
+                url_message: 'Check this great playground',
+                info: 'HTTPbin.org | A simple HTTP Request & Response Service',
+            },
+            content: [
+                'You are responsible for implementing how your script (e.g. in a ServiceWorker) handles Cache updates',
+                'Items in a Cache do not get updated unless explicitly requested; they don’t expire unless deleted',
+                'Call any of the Cache methods to maintain the Cache',
+                'Each browser has a hard limit on the amount of cache storage that a given origin can use'
+            ],
+            code: 'CacheStorage.open() --> Cache.add(request), ... '
         }
     }
 ];
