@@ -63,7 +63,6 @@ var apis = [
             code: 'new IntersectionObserver(callback, options)'
         }
     },
-    ,
     {
         id: 'cache',
         name: 'Cache API',
@@ -99,5 +98,34 @@ var apis = [
             ],
             code: 'CacheStorage.open() --> Cache.add(request), ... '
         }
-    }
+    },
+    {
+        id: 'storage_manager',
+        name: 'StorageManager API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The StorageManager interface of the the Storage API provides an interface for managing persistance permissions and estimating available storage. You can get a reference to this interface using either navigator.storage or WorkerNavigator.storage.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/StorageManager'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://storage.spec.whatwg.org/'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=mdn-api_storagemanager'
+        },
+        content: {
+            content: [
+                'This feature is available only in secure contexts (HTTPS)',
+                'Defines an API for persistent storage and quota estimates, as well as the platform storage architecture',
+                '<strong>!!! At this time, there is no programmatic way to tell the browser you no longer need persistent storage</strong>'
+            ],
+            code: 'StorageManager.estimate() ...'
+        }
+    },
 ];

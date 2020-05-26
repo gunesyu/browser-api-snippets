@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorageManager API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+</head>
+<body>
+    <div id="app" data-api="storage_manager">
+
+        <br />
+
+        <div class="api-example">
+            <h2>StorageManager and Persisted Storage</h2>
+            <button id="request_estimate">Request Storage Persistence</button>
+            <p>Storage quota: <span id="quota"></span></p>
+            <p>Storage used: <span id="usage"></span></p>
+            <br />
+            <button id="check_persistence">Check Storage Persistence</button>
+            <p>Is this app's storage persisted?: <span id="persisted"></span></p>
+            <br />
+            <button id="request_persistence">Request Storage Persistence</button>
+            <p>Storage persistence: <span id="persistence"></span></p>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/storage_manager.js"></script>
+</body>
+</html>
