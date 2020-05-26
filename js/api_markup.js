@@ -1,6 +1,6 @@
 ((function(){
     var app = document.getElementById('app')
-    var api = apis.filter(function(api){ return api.id == "beacon" })[0]
+    var api = apis.filter(function(api){ return api.id == app.dataset.api })[0]
     var content = api.content
 
     var markup = '<h1>'+ api.name +'</h1>'

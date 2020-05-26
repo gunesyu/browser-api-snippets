@@ -82,6 +82,9 @@ code {
     color: #dcdcdc;
 }
 
+.api-example {
+    border-top: 1px solid;
+}
 .api-example .buttons {
     display: flex;
     width: 100%;

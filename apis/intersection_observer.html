@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntersectionObserver API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+    <style>
+        #target_element {
+            height: 500px;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            width: 100%;
+            color: #000;
+            opacity: 1;
+            transition: all .3s;
+        }
+        #target_element.bg-0 {
+            background-color: #2f2f2f;
+        }
+        #target_element.bg-50 {
+            opacity: 0;
+        }
+        #target_element.bg-100 {
+            background-color: #a03;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="app" data-api="intersection_observer">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Scroll to see target element <i>TARGET</i> (make it slow when you see the element)</h2>
+
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit cumque temporibus porro! Quibusdam labore, natus ut error facilis numquam laudantium odio modi distinctio dolor pariatur sapiente impedit repellendus quidem iure.</p>
+            <p class="lorem">Animi, et, aliquam quos ex fuga nam pariatur hic minus officiis explicabo quisquam placeat ratione illum eos qui maiores repellendus cupiditate. Aliquid, laboriosam. Temporibus nam eveniet saepe, facere perferendis iste.</p>
+            <p class="lorem">Fugiat distinctio sed ducimus nam nisi perferendis quasi reiciendis maiores ad iste voluptas fugit deserunt accusantium voluptatum dolorum quis, debitis illo! Perspiciatis beatae autem expedita architecto perferendis quae nesciunt dolor.</p>
+            <p class="lorem">Aut, veritatis rerum officia error voluptatibus aliquid, ullam delectus atque assumenda numquam ea. Voluptas, totam. Quia ipsum alias, voluptates exercitationem ratione quaerat eos commodi itaque facere facilis, nisi rem voluptatum!</p>
+            <p class="lorem">Id illum alias blanditiis nesciunt itaque molestias repellendus minima obcaecati eaque in ea assumenda quam, provident amet sapiente vero et labore praesentium a corrupti voluptatum sunt odit libero dignissimos. Accusamus?</p>
+            <p class="lorem">Eius dolor ab, aperiam, doloremque voluptate pariatur reprehenderit eum atque necessitatibus, corporis dolore excepturi mollitia odio cum dignissimos saepe? Quaerat similique ipsam sunt natus non sequi doloribus suscipit, eos tempora?</p>
+            <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, reiciendis tenetur exercitationem assumenda aut ad aspernatur reprehenderit quasi deleniti laborum similique quam eaque facilis ea totam impedit ab eius ex!</p>
+            <p class="lorem">Ullam, dicta itaque molestiae veritatis, maiores cupiditate nisi placeat sit maxime cumque ea velit aliquam magnam earum. Modi mollitia incidunt repudiandae exercitationem quibusdam sunt eius repellat voluptates iusto, quae iure.</p>
+            <p class="lorem">Sunt perspiciatis totam nulla autem, exercitationem nemo cupiditate omnis! Officiis aliquam minus quidem perferendis corporis facere maxime ipsam, nostrum inventore eligendi necessitatibus assumenda obcaecati delectus temporibus. Totam dolorum explicabo incidunt?</p>
+
+            <div id="target_element"><strong>TARGET HERE</strong></div>
+
+            <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore et quidem iste quibusdam reprehenderit maxime vero, laboriosam, soluta sequi, amet possimus atque! Corrupti aspernatur vero quidem cumque optio repellat accusamus?</p>
+            <p class="lorem">Ad inventore, ut quam laboriosam nulla sed ipsam corporis fugit obcaecati laborum aperiam earum sapiente fuga neque consectetur harum placeat nemo. Est laborum suscipit dolores sint? Omnis quos dolor at.</p>
+            <p class="lorem">Ea aut obcaecati, facere veniam quidem temporibus vero quia, adipisci delectus nisi explicabo quibusdam voluptatem ipsam pariatur aliquam libero consequatur totam et dicta esse officia enim sed. Qui, maxime exercitationem!</p>
+            <p class="lorem">Inventore sequi, eos, expedita molestias in eaque architecto voluptatem quisquam cum vero aliquid nisi nesciunt sunt nihil consectetur error. Temporibus itaque inventore tempora, assumenda ab sit consequuntur rerum distinctio et.</p>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/intersection_observer.js"></script>
+</body>
+</html>

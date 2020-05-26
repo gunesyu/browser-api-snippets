@@ -5,7 +5,7 @@
         var apiItemMarkup = document.getElementById('api_item').innerHTML
 
         app.innerHTML = app.innerHTML + apiItemMarkup
-            .replace(/{{example_url}}/g, api.example_url)
+            .replace(/{{example_url}}/g, 'apis/' + api.id + '.html')
             .replace(/{{name}}/g, api.name)
 
             .replace(/{{definition_label}}/g, api.definition.display_name)
