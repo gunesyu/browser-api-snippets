@@ -1,0 +1,93 @@
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #202020;
+    color: #fafafa;
+    font-size: 14px;
+    padding: 0 14px;
+}
+a {
+    text-decoration: none;
+    transition: all .2s;
+}
+a:before {
+    content: "> ";
+}
+a, a:visited {
+    color: inherit;
+}
+a:hover, a:active, a:focus {
+    color: #ffffff;
+}
+p {
+    line-height: 1.6em;
+}
+small {
+    font-size: .8em;
+}
+code {
+    font-family: Consolas,"courier new";
+    color: greenyellow;
+    padding: 1.2rem;
+}
+
+#app {
+    width: 100%;
+    max-width: 767px;
+    margin: 2vh auto;
+}
+#app h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.api-check {
+    padding: 1.5rem;
+    border: 1px solid rgba(252, 252, 252, .5);
+    border-radius: 1.5rem;
+    margin: .75rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.api-check h2 {
+    font-size: 1.15rem;
+    margin-top: 0;
+    overflow: hidden;
+}
+.api-check h2 a {
+    position: relative;
+    padding-left: 0;
+    transition: all .2s;
+}
+.api-check h2 a:before {
+    position: absolute;
+    left: -50px;
+    transition: all .25s;
+}
+.api-check h2 a:hover {
+    padding-left: 1.25rem;
+}
+.api-check h2 a:hover:before {
+    left: 0;
+}
+.api-definition strong {
+    color: rgba(255, 255, 255, .6);
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+    font-size: .85rem;
+}
+.api-official-docs {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: #dcdcdc;
+}
+
+.api-example .buttons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.api-example .buttons>* {
+    font-size: 1.05rem;
+}
