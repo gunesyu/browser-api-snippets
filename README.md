@@ -14,3 +14,4 @@ Every api is in its own script inside `apis_js` directory for ease of use. To se
 4. StorageManager API
 5. Device Memory API
 6. Dialog API
+7. Notifications API

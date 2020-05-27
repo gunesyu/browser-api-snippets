@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Memory API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+</head>
+<body>
+    <div id="app" data-api="notifications">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Notifications</h2>
+
+            <p>You need to request permission from user:</p>
+            <button id="request">Request Notification Permission</button>
+            <p id="permission_result"></p>
+
+            <p>Trigger notification for a demonstration</p>
+            <button id="basic">Show Basic Notification</button>
+
+            <p>You can show custom notifications with some additions:</p>
+            <button id="custom">Show Custom Notification</button>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/notifications.js"></script>
+</body>
+</html>

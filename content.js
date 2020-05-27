@@ -185,5 +185,34 @@ var apis = [
             ],
             code: ''
         }
+    },
+    {
+        id: 'notifications',
+        name: 'Notifications API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The Notifications API allows web pages to control the display of system notifications to the end user. These are outside the top-level browsing context viewport, so therefore can be displayed even when the user has switched tabs or moved to a different app. The API is designed to be compatible with existing notification systems, across different platforms.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://www.w3.org/TR/notifications/'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=notifications'
+        },
+        content: {
+            content: [
+                'This feature is available only in secure contexts (HTTPS)',
+                'First, the user needs to grant the current origin permission to display system notifications, which is generally done when the app or site initialises',
+                'Next, a new notification is created'
+            ],
+            code: 'Notification.requestPermission() -->  Notification()'
+        }
     }
 ];
