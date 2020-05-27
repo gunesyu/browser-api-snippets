@@ -241,5 +241,32 @@ var apis = [
             ],
             code: ''
         }
+    },
+    {
+        id: 'page_visibility',
+        name: 'Page Visibility API',
+        definition: {
+            display_name: 'Definition',
+            content: 'With tabbed browsing, there is a reasonable chance that any given webpage is in the background and thus not visible to the user. The Page Visibility API provides events you can watch for to know when a document becomes visible or hidden, as well as features to look at the current visibility state of the page.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://www.w3.org/TR/page-visibility-2/'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=pagevisibility'
+        },
+        content: {
+            content: [
+                'When the user minimizes the window or switches to another tab, the API sends a visibilitychange event'
+            ],
+            code: 'visibilitychange event for document --> document.visibilityState readonly property'
+        }
     }
 ];

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Visibility API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+    <style>
+        .visible, .hidden {
+            margin: 0;
+            color: white;
+        }
+        .visible {
+            background-color: green;
+        }
+        .hidden {
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="app" data-api="page_visibility">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Page Visibility</h2>
+            <p>
+                You can see below all of visibility changes for this page
+                <br />
+                <small>(Switch back and forth between your tabs or apps)</small>
+            </p>
+            <div id="changes"></div>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/page_visibility.js"></script>
+</body>
+</html>
