@@ -214,5 +214,32 @@ var apis = [
             ],
             code: 'Notification.requestPermission() -->  Notification()'
         }
+    },
+    {
+        id: 'network',
+        name: 'Network State and Information API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The Network Information API provides information about the system\'s connection in terms of general connection type (e.g., \'wifi\', \'cellular\', etc.). This can be used to select high definition content or low definition content based on the user\'s connection. The entire API consists of the addition of the NetworkInformation interface and a single property to the Navigator interface: Navigator.connection.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://www.w3.org/TR/netinfo-api/'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=mdn-api_networkinformation'
+        },
+        content: {
+            content: [
+                'Connection type change is listened from connection object while network status is listened from window object'
+            ],
+            code: ''
+        }
     }
 ];

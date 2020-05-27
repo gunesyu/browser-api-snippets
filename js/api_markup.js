@@ -6,7 +6,10 @@
     var markup = '<h1>'+ api.name +'</h1>'
     for(var i = 0; i < content.content.length; i++)
         markup += '<p> - '+ content.content[i] + '</p>'
-    markup += '<br /><code>'+ content.code + '</code><br /><br />'
+
+    if(content.code) {
+        markup += '<br /><code>'+ content.code + '</code><br /><br />'
+    }
 
     if(content.vendor) {
         markup += '<p>' + content.vendor.url_message + ': <a href="' + content.vendor.url + '" target="_blank">' + content.vendor.info + '</a></p>'

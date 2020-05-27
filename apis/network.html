@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+    <style>
+        .online {
+            background-color: green;
+            color: white;
+        }
+        .offline {
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="app" data-api="network">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Network</h2>
+            <p>You can check for network state at anytime:</p>
+            <button id="check">Check Network State</button>
+            <p id="state"></p>
+            <p>
+                You can listen for network state changes
+                <br/>
+                <small>(You can change your connection via developer tools > network tab)</small>
+            </p>
+            <button id="listen">Listen for Network State Changes (and if exists check for Network Connection Type)</button>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/network.js"></script>
+</body>
+</html>
