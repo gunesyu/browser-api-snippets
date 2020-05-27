@@ -155,5 +155,35 @@ var apis = [
             ],
             code: 'navigator.deviceMemory || HTTP Client Hints Device-Memory'
         }
+    },
+    {
+        id: 'dialog',
+        name: 'Dialog API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The HTMLDialogElement interface provides methods to manipulate <dialog> elements. It inherits properties and methods from the HTMLElement interface.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://www.w3.org/TR/html52/interactive-elements.html#the-dialog-element'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#search=dialog'
+        },
+        content: {
+            content: [
+                'You can style dialog with regular css rules',
+                'You can style modal type dialog\'s backdrop with pseudoelement <strong>::backdrop</strong>',
+                'Has <strong>"close"</strong> (regular close) and <strong>"cancel"</strong> (close with esc key) events',
+                'There is also polyfill available'
+            ],
+            code: ''
+        }
     }
 ];

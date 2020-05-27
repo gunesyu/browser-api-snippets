@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Memory API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+</head>
+<body>
+    <div id="app" data-api="dialog">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Native Dialogs</h2>
+            <div class="buttons">
+                <button id="modal">Show Modal Version</button>
+                <button id="nonmodal">Show NonModal Version</button>
+            </div>
+            <p>Closed by: <span id="closed"></span></p>
+
+            <dialog id="dialog">
+                <h1>Dialog</h1>
+                <div>
+                    <p>Some elements or texts</p>
+                    <button class="modal-dismiss" data-info="accept">OK</button>
+                    <button class="modal-dismiss"  data-info="dismiss">Cancel</button>
+                </div>
+            </dialog>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/dialog.js"></script>
+</body>
+</html>
