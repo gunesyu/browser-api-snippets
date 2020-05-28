@@ -17,3 +17,4 @@ Every api is in its own script inside `apis_js` directory for ease of use. To se
 7. Notifications API
 8. Network State and Information API
 9. Page Visibility API
+10. Geolocation API

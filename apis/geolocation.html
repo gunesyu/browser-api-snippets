@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation API</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../content.js"></script>
+
+</head>
+<body>
+    <div id="app" data-api="geolocation">
+
+        <br />
+
+        <div class="api-example">
+            <h2>Geolocation</h2>
+            <button id="check">Check Your Location</button>
+            <p id="check_prompt">You are at <span id="lat"></span> latitude and <span id="lon"></span> longitude with accuracy <span id="acc"></span></p>
+            <button id="watch">Watch Your Location</button>
+            <p id="watch_prompt">Current location is <span id="watch_lat"></span> latitude and <span id="watch_lon"></span> longitude with accuracy <span id="watch_acc"></span> with <span id="watch_spe">X</span> m/s</p>
+        </div>
+    </div>
+
+    <script src="../js/api_markup.js"></script>
+
+    <!-- LOOK AT HERE -->
+    <script src="../apis_js/geolocation.js"></script>
+</body>
+</html>

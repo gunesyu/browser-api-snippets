@@ -268,5 +268,32 @@ var apis = [
             ],
             code: 'visibilitychange event for document --> document.visibilityState readonly property'
         }
+    },
+    {
+        id: 'geolocation',
+        name: 'Geolocation API',
+        definition: {
+            display_name: 'Definition',
+            content: 'The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.',
+            from: {
+                display_name: 'See',
+                source: 'MDN',
+                url: 'https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API'
+            }
+        },
+        docs: {
+            display_name: 'Check Docs',
+            url: 'https://w3c.github.io/geolocation-api/'
+        },
+        support: {
+            display_name: 'Check Browser Support',
+            url: 'https://caniuse.com/#feat=mdn-api_geolocation'
+        },
+        content: {
+            content: [
+                'This feature is available only in secure contexts (HTTPS)'
+            ],
+            code: 'navigator.geolocation'
+        }
     }
 ];
